@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10078a78-d131-4e1c-820f-f0c7bd9bfcee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/base_url/HerOkuAppBaseUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base_url/JsonPlaceHolderBaseUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Notes/ApiNotes01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Notes/ApiNotes01.java" afterDir="false" />
-    </list>
+    <list default="true" id="10078a78-d131-4e1c-820f-f0c7bd9bfcee" name="Changes" comment="&quot;get&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,6 +134,21 @@
       <option name="presentableId" value="Default" />
       <updated>1667854414169</updated>
     </task>
+    <task id="LOCAL-00001" summary="&quot;get&quot;">
+      <created>1667996722014</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667996722014</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&quot;get&quot;">
+      <created>1667996878616</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667996878616</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,5 +161,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;get&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;get&quot;" />
   </component>
 </project>
