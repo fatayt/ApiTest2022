@@ -8,11 +8,13 @@
     <artifactId>ApiTest2022</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -46,14 +48,15 @@
             <version>1.9.13</version>
         </dependency>
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.6.1</version>
+            <groupId>org.apache.maven.surefire</groupId>
+            <artifactId>surefire-api</artifactId>
+            <version>3.0.0-M1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
+
     <build>
-        <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (maybe moved to parent pom) -->
+        <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
                 <plugin>

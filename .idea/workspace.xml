@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10078a78-d131-4e1c-820f-f0c7bd9bfcee" name="Changes" comment="&quot;get&quot;" />
+    <list default="true" id="10078a78-d131-4e1c-820f-f0c7bd9bfcee" name="Changes" comment="&quot;get&quot;">
+      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,37 +40,18 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.Get03.get03">
-    <configuration name="Get01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Get02.get02">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="ApiTest2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="class01_get_http_request_method.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="class01_get_http_request_method" />
-      <option name="MAIN_CLASS_NAME" value="class01_get_http_request_method.Get01" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Get01.get01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ApiTest2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="class01_get_http_request_method.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="class01_get_http_request_method" />
-      <option name="MAIN_CLASS_NAME" value="class01_get_http_request_method.Get01" />
-      <option name="METHOD_NAME" value="get01" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,13 +103,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Get06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ApiTest2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="class01_get_http_request_method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="class01_get_http_request_method" />
+      <option name="MAIN_CLASS_NAME" value="class01_get_http_request_method.Get06" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Get06.get06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ApiTest2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="class01_get_http_request_method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="class01_get_http_request_method" />
+      <option name="MAIN_CLASS_NAME" value="class01_get_http_request_method.Get06" />
+      <option name="METHOD_NAME" value="get06" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="JUnit.Get02" />
+      <item itemvalue="JUnit.Get02.get02" />
+      <item itemvalue="JUnit.Get03.get03" />
+      <item itemvalue="JUnit.Get06" />
+      <item itemvalue="JUnit.Get06.get06" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Get03.get03" />
         <item itemvalue="JUnit.Get02.get02" />
-        <item itemvalue="JUnit.Get01" />
         <item itemvalue="JUnit.Get02" />
-        <item itemvalue="JUnit.Get01.get01" />
+        <item itemvalue="JUnit.Get03.get03" />
+        <item itemvalue="JUnit.Get06" />
+        <item itemvalue="JUnit.Get06.get06" />
       </list>
     </recent_temporary>
   </component>
@@ -165,5 +197,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;get&quot;" />
     <option name="LAST_COMMIT_MESSAGE" value="&quot;get&quot;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get02.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
