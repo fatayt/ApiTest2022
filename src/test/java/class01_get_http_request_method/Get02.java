@@ -4,7 +4,7 @@ import base_url.HerOkuAppBaseUrl;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Test;
-import static io.restassured.RestAssured.*;
+import static io.restassured.RestAssured.given;
 import static org.junit.Assert.*;
 
 public class Get02 extends HerOkuAppBaseUrl {
