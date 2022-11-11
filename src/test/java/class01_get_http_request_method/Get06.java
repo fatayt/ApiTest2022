@@ -5,7 +5,7 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Test;
-//import org.testng.asserts.SoftAssert;
+// import org.testng.asserts.SoftAssert;
 
 
 import static io.restassured.RestAssured.*;
@@ -41,7 +41,7 @@ public class Get06 extends HerOkuAppBaseUrl {
     @Test
     public void get06(){
     //1.adim: url'e set et
-        spec.pathParams("first", "booking", "second", 12691);
+        spec.pathParams("first", "booking", "second", 34);
 
     //2.adim:beklenen datayi set et
 
@@ -52,8 +52,8 @@ public class Get06 extends HerOkuAppBaseUrl {
     //4. assertion yap
     //1. yol
     response.then().assertThat().statusCode(200).contentType(ContentType.JSON).
-            body("firstname", equalTo("Javier")).
-            body("lastname", equalTo("Dominguez")).
+            body("firstname", equalTo("Edgar")).
+            body("lastname", equalTo("Morante Briones")).
             body("totalprice", equalTo(111)).
             body("depositpaid", equalTo(true)).
             body("bookingdates.checkin", equalTo("2018-01-01")).
@@ -64,8 +64,8 @@ public class Get06 extends HerOkuAppBaseUrl {
         response.then().assertThat().statusCode(200).contentType(ContentType.JSON);
 
         JsonPath json = response.jsonPath();
-        assertEquals( "Javier", json.getString("firstname") );
-        assertEquals("Soyisimler eslesmiyor", "Dominguez", json.getString("lastname") );
+        assertEquals( "Edgar", json.getString("firstname") );
+        assertEquals("Soyisimler eslesmiyor", "Morante Briones", json.getString("lastname") );
         assertEquals("total price eslesmiyor", 111, json.getInt("totalprice") );
         assertEquals("depositpaid eslesmiyor", true, json.get("depositpaid") );
         assertEquals("Checkin date eslesmiyor", "2018-01-01", json.getString("bookingdates.checkin") );
@@ -75,17 +75,17 @@ public class Get06 extends HerOkuAppBaseUrl {
         //3.yol SoftAssert
         //i- SoftAssert objesini olusturma
 //        SoftAssert softAssert = new SoftAssert();
-//
-//        //ii- SoftAssert objesini kullanarak Assertion yapmak
+
+       //ii- SoftAssert objesini kullanarak Assertion yapmak
 //        softAssert.assertEquals(json.getString("firstname"),"Javier", "isimler eslesmiyor");
 //        softAssert.assertEquals(json.getString("lastname"),"Dominguez", "Soyisimler eslesmiyor");
 //        softAssert.assertEquals(json.getString("totalprice"),111, "Totalprice eslesmiyor");
 //        softAssert.assertEquals(json.getString("depositpaid"),true, "Depositpaid eslesmiyor");
 //        softAssert.assertEquals(json.getString("bookingdates.checkin"),"2018-01-01", "Checkin date eslesmiyor");
 //        softAssert.assertEquals(json.getString("bookingdates.checkout"),"2019-01-01", "Checkout date eslesmiyor");
-//
-//
-//        //iii-MUTLAKA EN SONDA assertAll() yapilmali. Eger assertAll() kullanmazsaniz her zaman testiniz gecti gorunur fakat bu anlamli olmayabilir
+
+
+        //iii-MUTLAKA EN SONDA assertAll() yapilmali. Eger assertAll() kullanmazsaniz her zaman testiniz gecti gorunur fakat bu anlamli olmayabilir
 //        softAssert.assertAll();
 
     }
