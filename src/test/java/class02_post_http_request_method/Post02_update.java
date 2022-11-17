@@ -13,6 +13,7 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
 public class Post02_update  extends JsonPlaceHolderBaseUrl {
+
 /*
        Given
                 https://jsonplaceholder.typicode.com/todos
@@ -34,14 +35,15 @@ public class Post02_update  extends JsonPlaceHolderBaseUrl {
              }
      */
 
-    @Test
+
+@Test
     public void post02(){
         //1.adim: url`i set et
         spec.pathParam("first", "todos");
 
         //2.adim expected datayi set et
         JsonPlaceHolderTestData expectedData = new JsonPlaceHolderTestData();
-        Map<String, Object> expectedDataMap = expectedData.getExceptedDataSetUp();
+        Map<String, Object> expectedDataMap = expectedData.expectedDataSetUp();
 
         //3.adim: request gonder ve respond al
 
