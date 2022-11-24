@@ -1,4 +1,3 @@
-
 package class02_post_http_request_method;
 
 import base_url.AgroMonitoringBaseUrl;
@@ -7,6 +6,7 @@ import io.restassured.response.Response;
 import org.junit.Test;
 import test_data.AgroMonitoringTestData;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -14,8 +14,9 @@ import static io.restassured.RestAssured.*;
 import static org.junit.Assert.assertEquals;
 
 public class Post03 extends AgroMonitoringBaseUrl {
-/*      Given
-            "http://api.agromonitoring.com/agro/1.0/polygons?appid=b1e72777e8b1f70d2b871522093e3486"
+    /*
+           Given
+            "http://api.agromonitoring.com/agro/1.0/polygons?appid=7bd9969a12d424af27967d6d821dc5f3"
 
                 {
                    "name":"Polygon Sample",
@@ -41,7 +42,8 @@ public class Post03 extends AgroMonitoringBaseUrl {
              I send POST Request to the Url
         Then
             Assert Status Code (201)
-            And Response Body should be like {
+            And Response Body should be like
+            {
                 "id": "5fd8c383714b523b2ce1f154",
                 "geo_json": {
                     "geometry": {
@@ -63,49 +65,38 @@ public class Post03 extends AgroMonitoringBaseUrl {
                 "created_at": 1608041347
             }
          */
-
-
     @Test
     public void post03(){
-        //1. url'e set et
+      //1.adim: url'i set et
         spec.pathParams("first", "agro", "second", 1.0, "final", "polygons").
-                queryParams("appid", "b1e72777e8b1f70d2b871522093e3486", "duplicated", true);    //Eger ayni kayittan varsa bununla asabiliriz (, "duplicated" true)
+                queryParams("appid", "7bd9969a12d424af27967d6d821dc5f3", "duplicated", true);
 
-        //2. Expected datayi set et
+      //2.adim expected data set et
         AgroMonitoringTestData requestBody = new AgroMonitoringTestData();
-        Map<String,Object> requestBodyMap = requestBody.requestBodySetUp();
+        Map<String, Object> requestBodyMap =  requestBody.requestBodySetUp();
 
-        //3. Request gonder ve Response al
-        Response response = given().spec(spec).contentType(ContentType.JSON).body(requestBodyMap).when().post("/{first}/{second}/{final}");
-        response.prettyPrint();
+      //3.adim:  Request gonder respond al
+      Response response = given().spec(spec).contentType(ContentType.JSON).body(requestBodyMap).when().post("/{first}/{second}/{final}");
+      response.prettyPrint();
 
-        // request body'ye yeni data eklenebilir
+      // request body'ye yeni data eklenebilir
         requestBodyMap.put("area", 190.9484);
 
-        //4. Assertion yap
-        //Gson response (json) => java object ==> De-Serialization
-        Map<String,Object> responseBody = response.as(HashMap.class);
+        //4.adim: Assertion yap
+      //Gson response (json) => java object ==> De-Serialization
+        Map<String, Object> responseBody = response.as(HashMap.class);
         System.out.println(responseBody);
 
-      //  assertEquals(requestBodyMap.get("area"), responseBody.get("area"));
+        assertEquals(requestBodyMap.get("area"), responseBody.get("area") );
         response.then().assertThat().statusCode(201);
-        assertEquals(requestBodyMap.get("name"), responseBody.get("name"));
+        assertEquals(requestBodyMap.get("name"), responseBody.get("name") );
 
-        assertEquals(requestBody.geometrySetUp().get("type"), ((Map)((Map)responseBody.get("geo_json")).get("geometry")).get("type"));
+        assertEquals(requestBody.geometrySetUp().get("type"), ((Map)((Map)responseBody.get("geo_json")).get("geometry")).get("type") );
+
 
 //        System.out.println(requestBody.coordinates[0][1][0]);
-//        System.out.println(((Map)((Map)responseBody.get("geo_json")).get("geometry")).get("coordinates").toString().substring(25,34));
-        assertEquals(String.valueOf(requestBody.coordinates[0][1][0]),
-                ((Map)((Map) responseBody.get("geo_json")).get("geometry")).get("coordinates").toString().substring(25, 34));
-
-
-
-
-
-
+//        System.out.println(((Map)((Map)responseBody.get("geo_json")).get("geometry")).get("coordinates").toString().substring(25, 34 ));
+        assertEquals(String.valueOf(requestBody.coordinates[0][1][0]), ((Map)((Map)responseBody.get("geo_json")).get("geometry")).get("coordinates").toString().substring(25, 34 ));
 
     }
-
-
-
- }
+}

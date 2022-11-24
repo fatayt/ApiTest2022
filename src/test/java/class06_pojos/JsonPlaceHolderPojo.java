@@ -4,36 +4,29 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 // Pojo'ya diyorum ki json formatindan pojo formatina  donustururken, eger bazi degiskenleri tanimiyorsan (unknown) onlari, gormemezlikten gel
-
 public class JsonPlaceHolderPojo {
     //POJO=> plain old java object
     /*
-    POJO içinde private deqiskenler, getter ve setter, butun parametrelere sahip constructor ve
-    parametreleri olmayan constructor ile toString() kullanilmali
-    */
-    // private degisken olustur
+    POJO icinde private degiskenler butun parametrelere sahip constructor ve
+    parametreleri olmayan constructor , getter ve setter, ile toString() kullanilmali
+     */
+    //private degisken olustur
     private Integer userId;
     private String title;
     private Boolean completed;
 
     // tum parametrelere sahip constructor
 
-
     public JsonPlaceHolderPojo(Integer userId, String title, Boolean completed) {
         this.userId = userId;
         this.title = title;
         this.completed = completed;
     }
-
     // parametresiz constructor
-
 
     public JsonPlaceHolderPojo() {
     }
-
-    // generate getter ve setter
-
-
+// generate getter ve setter
     public Integer getUserId() {
         return userId;
     }
@@ -57,8 +50,7 @@ public class JsonPlaceHolderPojo {
     public void setCompleted(Boolean completed) {
         this.completed = completed;
     }
-
-    // toString methodu olustur
+    //toString  olustur
 
 
     @Override

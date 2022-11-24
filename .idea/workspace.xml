@@ -5,21 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10078a78-d131-4e1c-820f-f0c7bd9bfcee" name="Changes" comment="&quot;get&quot;">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Class04_patch_http_request_method/Patch01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/GetVePojo01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostVePojo01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostVePojo02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class03_put_http_request_method/Put01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class05_delete_http_request_method/delete01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/BookingDatesPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/BookingPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/HerOkuAppPostResponseBodyPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/JsonPlaceHolderPojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/base_url/GoRestApiBaseUrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/GetVeObjectMapper01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/GetVeObjectMapper02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostDeletePojo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostDeleteVePojo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostGetVeObjectMapperVePojo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostVeObjectMapperVePojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostVePojo03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/GoRestDataPojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/GoRestPojo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Class04_patch_http_request_method/Patch01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Class04_patch_http_request_method/Patch01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Notes/ApiNotes01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Notes/ApiNotes01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base_url/AgroMonitoringBaseUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base_url/AgroMonitoringBaseUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base_url/HerOkuAppBaseUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base_url/HerOkuAppBaseUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base_url/JsonPlaceHolderBaseUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base_url/JsonPlaceHolderBaseUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get07.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get08.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get08.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/GetVePojo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/GetVePojo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post02_update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post02_update.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_data/AgroMonitoringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_data/AgroMonitoringTestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostVePojo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostVePojo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostVePojo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostVePojo02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class03_put_http_request_method/Put01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class03_put_http_request_method/Put01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class05_delete_http_request_method/delete01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class05_delete_http_request_method/delete01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class06_pojos/BookingDatesPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/BookingDatesPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class06_pojos/BookingPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/BookingPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class06_pojos/HerOkuAppPostResponseBodyPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/HerOkuAppPostResponseBodyPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/class06_pojos/JsonPlaceHolderPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/JsonPlaceHolderPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_data/AgroMonitoringTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_data/AgroMonitoringTestData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test_data/JsonPlaceHolderTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_data/JsonPlaceHolderTestData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +90,7 @@
       <command value="mvn initalize" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GetVePojo01.getVePojo01">
+  <component name="RunManager" selected="JUnit.Get11.Get11">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -73,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetVePojo01.getVePojo01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Get10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ApiTest2022" />
       <extension name="coverage">
         <pattern>
@@ -82,14 +108,45 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="class01_get_http_request_method" />
-      <option name="MAIN_CLASS_NAME" value="class01_get_http_request_method.GetVePojo01" />
-      <option name="METHOD_NAME" value="getVePojo01" />
+      <option name="MAIN_CLASS_NAME" value="class01_get_http_request_method.Get10" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Get10.get10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ApiTest2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="class01_get_http_request_method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="class01_get_http_request_method" />
+      <option name="MAIN_CLASS_NAME" value="class01_get_http_request_method.Get10" />
+      <option name="METHOD_NAME" value="get10" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Post02_update.post02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Get11.Get11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ApiTest2022" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="class01_get_http_request_method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="class01_get_http_request_method" />
+      <option name="MAIN_CLASS_NAME" value="class01_get_http_request_method.Get11" />
+      <option name="METHOD_NAME" value="Get11" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostGetVeObjectMapperVePojo01.postGetVeObjectMapperVePojo01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ApiTest2022" />
       <extension name="coverage">
         <pattern>
@@ -98,14 +155,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="class02_post_http_request_method" />
-      <option name="MAIN_CLASS_NAME" value="class02_post_http_request_method.Post02_update" />
-      <option name="METHOD_NAME" value="post02" />
+      <option name="MAIN_CLASS_NAME" value="class02_post_http_request_method.PostGetVeObjectMapperVePojo01" />
+      <option name="METHOD_NAME" value="postGetVeObjectMapperVePojo01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostVePojo01.postVepojo01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PostGetVeObjectMapperVePojo01.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ApiTest2022" />
       <extension name="coverage">
         <pattern>
@@ -114,40 +171,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="class02_post_http_request_method" />
-      <option name="MAIN_CLASS_NAME" value="class02_post_http_request_method.PostVePojo01" />
-      <option name="METHOD_NAME" value="postVepojo01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostVePojo02.postVePojo02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ApiTest2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="class02_post_http_request_method.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="class02_post_http_request_method" />
-      <option name="MAIN_CLASS_NAME" value="class02_post_http_request_method.PostVePojo02" />
-      <option name="METHOD_NAME" value="postVePojo02" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="delete01.delete01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ApiTest2022" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="class05_delete_http_request_method.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="class05_delete_http_request_method" />
-      <option name="MAIN_CLASS_NAME" value="class05_delete_http_request_method.delete01" />
-      <option name="METHOD_NAME" value="delete01" />
+      <option name="MAIN_CLASS_NAME" value="class02_post_http_request_method.PostGetVeObjectMapperVePojo01" />
+      <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,19 +180,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
-      <item itemvalue="JUnit.GetVePojo01.getVePojo01" />
-      <item itemvalue="JUnit.PostVePojo01.postVepojo01" />
-      <item itemvalue="JUnit.PostVePojo02.postVePojo02" />
-      <item itemvalue="JUnit.delete01.delete01" />
-      <item itemvalue="JUnit.Post02_update.post02" />
+      <item itemvalue="JUnit.Get10.get10" />
+      <item itemvalue="JUnit.Get11.Get11" />
+      <item itemvalue="JUnit.PostGetVeObjectMapperVePojo01.test01" />
+      <item itemvalue="JUnit.PostGetVeObjectMapperVePojo01.postGetVeObjectMapperVePojo01" />
+      <item itemvalue="JUnit.Get10" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GetVePojo01.getVePojo01" />
-        <item itemvalue="JUnit.PostVePojo02.postVePojo02" />
-        <item itemvalue="JUnit.PostVePojo01.postVepojo01" />
-        <item itemvalue="JUnit.delete01.delete01" />
-        <item itemvalue="JUnit.Post02_update.post02" />
+        <item itemvalue="JUnit.Get11.Get11" />
+        <item itemvalue="JUnit.PostGetVeObjectMapperVePojo01.test01" />
+        <item itemvalue="JUnit.Get10.get10" />
+        <item itemvalue="JUnit.Get10" />
+        <item itemvalue="JUnit.PostGetVeObjectMapperVePojo01.postGetVeObjectMapperVePojo01" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668088030143</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="&quot;get&quot;">
+      <created>1668720349393</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668720349393</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,7 +256,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post01.java</url>
-          <line>47</line>
+          <line>43</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

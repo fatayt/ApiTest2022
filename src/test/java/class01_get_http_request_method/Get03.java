@@ -5,7 +5,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Test;
 
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.equalTo;
 
 public class Get03 extends JsonPlaceHolderBaseUrl {
@@ -26,15 +26,16 @@ public class Get03 extends JsonPlaceHolderBaseUrl {
            “userId”  2 olmali
     */
     @Test
-    public  void  get03(){
+    public void get03(){
         //1.adim: url set et
-        spec.pathParams("ilk", "todos", "ikinci", 23);
+        spec.pathParams("ilk", "todos", "ikinci", 23 );
+
         //2. adim: beklenen (expected) data set et
 
         //3.adim: Get request yapilir ve Get response alinir
 
-        Response response = given().spec(spec).when().get("/{ilk}/{ikinci}");
-        response.print();
+       Response response =  given().spec(spec).when().get("/{ilk}/{ikinci}");
+       response.print();
 
         //4.adim: Assertion yap
         //1.yol
@@ -43,9 +44,10 @@ public class Get03 extends JsonPlaceHolderBaseUrl {
                 assertThat().
                 statusCode(200).
                 contentType(ContentType.JSON).
-                body("title", equalTo("et itaque necessitatibus maxime molestiae qui quas velit")).
+                body("title", equalTo("et itaque necessitatibus maxime molestiae qui quas velit") ).
                 body("completed", equalTo(false)).
                 body("userId", equalTo(2));
+
         //2.yol
         response.
                 then().
@@ -56,6 +58,6 @@ public class Get03 extends JsonPlaceHolderBaseUrl {
                         "completed", equalTo(false),
                         "userId", equalTo(2));
 
-    }
 
+    }
 }

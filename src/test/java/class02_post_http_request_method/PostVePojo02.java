@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.*;
 import static org.junit.Assert.assertEquals;
 
 public class PostVePojo02 extends HerOkuAppBaseUrl {
- /*
+        /*
     Given
              https://restful-booker.herokuapp.com/booking/
 
@@ -48,7 +48,6 @@ public class PostVePojo02 extends HerOkuAppBaseUrl {
  */
     @Test
     public void postVePojo02(){
-
         //1.adim: url'i set et
         spec.pathParam("first", "booking");
 

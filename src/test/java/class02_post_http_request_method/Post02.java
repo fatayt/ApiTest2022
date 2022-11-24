@@ -10,62 +10,64 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.*;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class Post02 extends JsonPlaceHolderBaseUrl {
 /*
-   Given
+       Given
             https://jsonplaceholder.typicode.com/todos
             {
                 "userId": 55,
                 "title": "Tidy your room",
                 "completed": false
               }
-    When
-           Url'e POST Request gonder
-    Then
-        Status code is 201
-    And
-        response body is like {
-            "userId": 55,
-            "title": "Tidy your room",
-            "completed": false,
-            "id": 201
-         }
- */
-@Test
-    public void post02(){
-    //1.adim: url`i set et
-    spec.pathParam("first", "todos");
+        When
+               Url'e POST Request gonder
+        Then
+            Status code is 201
+        And
+            response body is like {
+                "userId": 55,
+                "title": "Tidy your room",
+                "completed": false,
+                "id": 201
+             }
+     */
+ @Test
+ public void post02(){
+     //1. adim: url'i set et
+     spec.pathParam("first", "todos");
 
-    //2.adim expected datayi set et
-    Map<String, Object> exceptedData = new HashMap<>();
-    exceptedData.put("userId", 55);
-    exceptedData.put("title", "Tidy your room");
-    exceptedData.put("completed", false);
-    System.out.println(exceptedData);
+     //2. adim: expected datayi set et
+     Map<String, Object> expectedData = new HashMap<>();
+     expectedData.put("userId", 55);
+     expectedData.put("title", "Tidy your room");
+     expectedData.put("completed", false);
 
-    //3.adim: request gonder ve respond al
-    Response response = given().
+     System.out.println(expectedData);
+
+
+     //3. adim: request gonder ve respond al
+     Response response = given().
                                 spec(spec).
                                 contentType(ContentType.JSON).
-                                body(exceptedData).
-                                when().
+                                body(expectedData).when().
                                 post("/{first}");
-    response.prettyPrint();
+     response.prettyPrint();
 
-    exceptedData.put("Status Code", 201);
+     expectedData.put("Status Code", 201);
+     // 4. adim: assertion yap
+     Map<String, Object> actualData = response.as(HashMap.class);// De-serialization
 
-    //4.adim: assertion yap
-    Map<String, Object> actualData = response.as(HashMap.class); // De-serialization
-    System.out.println(actualData);
+     System.out.println(actualData);
 
-    response.then().statusCode(201);
+     response.then().statusCode(201);
 
-    assertEquals(exceptedData.get("Status Code"), response.getStatusCode());
-    assertEquals(exceptedData.get("userId"), actualData.get("userId"));
-    assertEquals(exceptedData.get("title"), actualData.get("title"));
-    assertEquals(exceptedData.get("completed"), actualData.get("completed"));
-}
+     assertEquals(expectedData.get("Status Code"), response.getStatusCode());
+     assertEquals(expectedData.get("userId"), actualData.get("userId"));
+     assertEquals(expectedData.get("title"), actualData.get("title"));
+     assertEquals(expectedData.get("completed"), actualData.get("completed"));
 
+ }
 
 }

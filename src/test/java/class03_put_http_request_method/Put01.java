@@ -11,70 +11,65 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.*;
-import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertEquals;
 
 public class Put01 extends JsonPlaceHolderBaseUrl {
-
     //Put methodu , fully (butun) icin gunceleme yapar -> butun degiskenler guncellenir
     //Patch method kismi guncelleme yapar
+  /*
+    Given
+        https://jsonplaceholder.typicode.com/todos/198
 
-  /* Given
-      https://jsonplaceholder.typicode.com/todos/198
-
-    {
-      "userId": 21,
-      "title": "Wash the dishes",
-      "completed": false
-     }
-  When
-       URl'e PUT Request gonder
-  Then
-       Status code is 200
-       And response body is like
-       {
-          "userId": 21,
-          "title": "Wash the dishes",
-          "completed": false
-         }
-*/
+      {
+        "userId": 21,
+        "title": "Wash the dishes",
+        "completed": false
+       }
+    When
+         URl'e PUT Request gonder
+    Then
+         Status code is 200
+         And response body is like
+         {
+            "userId": 21,
+            "title": "Wash the dishes",
+            "completed": false
+           }
+     */
 
     @Test
     public void put01(){
+        //1. adim : url'i set
+        spec.pathParams("first", "todos", "second", 198);
 
-        //1. url'e set et
-        spec.pathParams("first","todos", "second", 198);
-
-        //2. Expected datayi set et
+        //2.adim: request body veya expected data set et
         JsonPlaceHolderTestData requestBody = new JsonPlaceHolderTestData();
-        Map<String,Object> requestBodyMap = requestBody.expectedDataSetUpTumKey(21, "Wash the dishes", false);
+        Map<String, Object> requestBodyMap=  requestBody.expectedDataSetUpTumKey(21, "Wash the dishes", false);
 
-        //3. Request gonder ve Response al
-        Response response = given().spec(spec).
-                            contentType(ContentType.JSON).              // accept(ContentType.JSON)  :"Yalnızca json'u kabul ediyorum, lütfen bana json biçiminde yanıt verin" anlamına gelir.
-                            body(requestBodyMap).when().put("/{first}/{second}");
-        response.prettyPrint();
+        // 3.adim: request gonder, response al
+       Response response = given().spec(spec).contentType(ContentType.JSON).body(requestBodyMap).when().put("/{first}/{second}");
+       response.prettyPrint();
 
-        //4. Assertion yap
+       //4.adim: assetion yap
         //1.yol
         response.then().assertThat().statusCode(200).body("completed", equalTo(requestBodyMap.get("completed")),
-        "title", equalTo(requestBodyMap.get("title")),
+                "title", equalTo(requestBodyMap.get("title")),
                 "userId", equalTo(requestBodyMap.get("userId")));
-
         //2.yol
-        // Gson kullanarak ==> de-serialization === Json ==> Java object
-        Map<String,Object> gercekDataMap = response.as(HashMap.class);
-        assertEquals(requestBodyMap.get("completed"), gercekDataMap.get("completed"));
+        // Gson kullaran ==> de-serialization === Json ==> Java object
+        Map<String, Object>  gercekDataMap = response.as(HashMap.class);
+        assertEquals(requestBodyMap.get("completed"),gercekDataMap.get("completed") );
 
-        // Gson kullanarak Serialization yapmak Java object data ===> Json formatina donusturuyoruz
+// Gson kullanarak Serialization yapmak Java object data ===> Json formatina donusturuyoruz
 
-        Map<String,Integer> yas = new HashMap<>();
+        Map<String, Integer> yas = new HashMap<>();
         yas.put("Ali Can", 15);
         yas.put("Veli Han", 18);
         yas.put("Ayse Kan", 21);
         yas.put("Tom Hanks", 65);
 
-        System.out.println(yas);    //{Tom Hanks=65, Ayse Kan=21, Ali Can=15, Veli Han=18}
+        System.out.println(yas);//{Tom Hanks=65, Ayse Kan=21, Ali Can=15, Veli Han=18}
 
         // yas ==> Json formatina donustur
         //1. adim
@@ -85,6 +80,12 @@ public class Put01 extends JsonPlaceHolderBaseUrl {
         System.out.println(JavadanJsona);
 
 
+
+
+
+
+
     }
+
 
 }

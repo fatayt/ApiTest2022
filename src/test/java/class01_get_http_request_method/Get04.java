@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 public class Get04 extends JsonPlaceHolderBaseUrl {
-    /*
+        /*
     When
 	 	GET request gonder =>  REST API URL https://jsonplaceholder.typicode.com/todos
     And
@@ -35,16 +35,16 @@ public class Get04 extends JsonPlaceHolderBaseUrl {
      */
     @Test
     public void get04(){
+        //1.adim: url'e set et
+        spec.pathParam("birinci", "todos");
 
-        //1.adim:url'yi set et
-        spec.pathParam("birinci", "ikinci");
+        //2.adim:beklenen datayi set et
 
-        //2.adim: beklenen datayi set et
+        // 3.adim: get request gonder ve get response al
+         Response response = given().spec(spec).accept(ContentType.JSON).when().get("/{birinci}");
+         response.prettyPrint();
 
-        //3.adim: get request gonder ve get response al
-        Response response = given().spec(spec).accept(ContentType.JSON).when().get("/{birinci}");
-        response.prettyPrint();
-        //4.adim assertion yap
+        //4. assertion yap
         response.
                 then().
                 assertThat().
@@ -55,6 +55,6 @@ public class Get04 extends JsonPlaceHolderBaseUrl {
                 body("userId", hasItems(2, 7, 9));
 
 
-
     }
+
 }

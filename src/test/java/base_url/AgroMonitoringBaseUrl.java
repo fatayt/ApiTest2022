@@ -5,7 +5,8 @@ import io.restassured.specification.RequestSpecification;
 import org.junit.Before;
 
 public class AgroMonitoringBaseUrl {
-    // base url baska bir sinifa olustururum ve ihtiyacim oldugunda gider kullanirim
+   // base url baska bir sinifa olustururum ve ihtiyacim oldugunda gider kullanirim
+
     // RequestSpecification data type bir obje olusturulur
     protected RequestSpecification spec;
 
@@ -16,6 +17,7 @@ public class AgroMonitoringBaseUrl {
     @Before
     public void setUp(){
         spec = new RequestSpecBuilder().setBaseUri("http://api.agromonitoring.com").build();
+
     }
 
 }

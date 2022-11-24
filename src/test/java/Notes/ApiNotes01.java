@@ -1,7 +1,7 @@
 package Notes;
 
 public class ApiNotes01 {
-    /*
+/*
 	 API : Application Programing Interface: uygulama programlama Arayuzu
 
 	 API'larin arayuzleri yoktur (bu yuzden programlama Arayuzu denir)

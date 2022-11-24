@@ -4,7 +4,6 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class BookingPojo {
-
     private String firstname;
     private String lastname;
     private Integer totalprice;
@@ -12,8 +11,10 @@ public class BookingPojo {
     private BookingDatesPojo bookingdates;
     private String additionalneeds;
 
+
     public BookingPojo() {
     }
+
 
     public BookingPojo(String firstname, String lastname, Integer totalprice, Boolean depositpaid, BookingDatesPojo bookingdates, String additionalneeds) {
         this.firstname = firstname;
