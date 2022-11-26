@@ -5,48 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10078a78-d131-4e1c-820f-f0c7bd9bfcee" name="Changes" comment="&quot;get&quot;">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/JsonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base_url/GoRestApiBaseUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/GetVeObjectMapper01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/GetVeObjectMapper02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostDeletePojo01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostDeleteVePojo01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostGetVeObjectMapperVePojo01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostVeObjectMapperVePojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostVePojo03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/GoRestDataPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/GoRestPojo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Class04_patch_http_request_method/Patch01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Class04_patch_http_request_method/Patch01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Notes/ApiNotes01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Notes/ApiNotes01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base_url/AgroMonitoringBaseUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base_url/AgroMonitoringBaseUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base_url/HerOkuAppBaseUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base_url/HerOkuAppBaseUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base_url/JsonPlaceHolderBaseUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base_url/JsonPlaceHolderBaseUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get07.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get07.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get08.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/Get08.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/GetVePojo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class01_get_http_request_method/GetVePojo01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post02_update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post02_update.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/Post03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostVePojo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostVePojo01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostVePojo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class02_post_http_request_method/PostVePojo02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class03_put_http_request_method/Put01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class03_put_http_request_method/Put01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class05_delete_http_request_method/delete01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class05_delete_http_request_method/delete01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class06_pojos/BookingDatesPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/BookingDatesPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class06_pojos/BookingPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/BookingPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class06_pojos/HerOkuAppPostResponseBodyPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/HerOkuAppPostResponseBodyPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/class06_pojos/JsonPlaceHolderPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/class06_pojos/JsonPlaceHolderPojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_data/AgroMonitoringTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_data/AgroMonitoringTestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_data/JsonPlaceHolderTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_data/JsonPlaceHolderTestData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
